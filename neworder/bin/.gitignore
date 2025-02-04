@@ -1,33 +1,32 @@
-HELP.md
+# Maven, Gradle
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+dist/
+
+# 환경 변수 및 보안 관련 
+.env
+.env.local
+.env.*
+!env.example # 환경 변수 예제 파일만 Git에 올림
+
+# 🖥️ IDE 관련 (STS, IntelliJ, VS Code)
+### IntelliJ IDEA ###
+.idea/
+*.iml
 
 ### VS Code ###
 .vscode/
+
+# Maven Wrapper
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# 📦 Node.js 
+node_modules/
+package-lock.json
+yarn.lock
+
+
+# 운영체제에서 자동 생성되는 불필요한 파일
+.DS_Store # macOS
+Thumbs.db # Windows
