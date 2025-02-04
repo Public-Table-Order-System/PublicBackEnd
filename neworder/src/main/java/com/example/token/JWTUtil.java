@@ -26,7 +26,7 @@ import io.jsonwebtoken.security.SignatureException;
 public class JWTUtil {
     
     /// 토큰 생성시 사용할 보안키
-    final String KEYCODE = "felkj34#$#_%fejkr4352o9ui432908u432jfi2oj23r53232";
+    final String KEYCODE = "YOUR_SECRET_KEY_HERE";
     byte[] securityKeyBytes = Base64.getEncoder().encode(KEYCODE.getBytes());
     SecretKey key = Keys.hmacShaKeyFor(securityKeyBytes);
 
