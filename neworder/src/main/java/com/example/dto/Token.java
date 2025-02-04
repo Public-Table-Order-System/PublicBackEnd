@@ -9,14 +9,12 @@ public class Token {
 
     int no;
 
-    
     String adminEmail;
 
     String token;
 
     Date expiretime;
 
-    
     Date createAt;
 
 }
